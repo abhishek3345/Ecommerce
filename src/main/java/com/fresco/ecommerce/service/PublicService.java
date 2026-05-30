@@ -39,9 +39,7 @@ public class PublicService {
         List<Product> product =  productRepo
                 .findByProductNameContainingIgnoreCaseOrCategoryCategoryNameContainingIgnoreCase(
                         keyword, keyword);
-
         return product;
-
     }
 
     // POST /api/public/login
@@ -53,7 +51,6 @@ public class PublicService {
                             requestBody.getPassword()
                     )
             );
-
             User user = userAuthService.loadUserByUsername(requestBody.getUsername());
             return jwtUtil.generateToken(user);
         }
