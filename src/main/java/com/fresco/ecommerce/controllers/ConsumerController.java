@@ -1,13 +1,7 @@
 package com.fresco.ecommerce.controllers;
 
-import com.fresco.ecommerce.config.JwtUtil;
-import com.fresco.ecommerce.models.Cart;
 import com.fresco.ecommerce.models.CartProduct;
 import com.fresco.ecommerce.models.Product;
-import com.fresco.ecommerce.models.User;
-import com.fresco.ecommerce.repo.CartProductRepo;
-import com.fresco.ecommerce.repo.CartRepo;
-import com.fresco.ecommerce.repo.ProductRepo;
 import com.fresco.ecommerce.service.ConsumerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -15,8 +9,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.transaction.Transactional;
-import java.util.ArrayList;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/auth/consumer")

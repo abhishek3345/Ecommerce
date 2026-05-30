@@ -1,9 +1,6 @@
 package com.fresco.ecommerce.models;
 
 import java.util.List;
-
-
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import javax.persistence.*;
 
