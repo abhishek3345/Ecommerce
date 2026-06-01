@@ -58,6 +58,8 @@ public class ConsumerService {
 
         cartProductRepo.save(new CartProduct(cart, existing, 1));
 
+        cart.updateTotalAmount(existing.getPrice());
+        cartRepo.save(cart);
     }
 
 
