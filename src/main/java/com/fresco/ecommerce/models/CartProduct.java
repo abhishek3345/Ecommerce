@@ -5,7 +5,7 @@ import javax.persistence.*;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-@Table(uniqueConstraints = @UniqueConstraint(columnNames = { "cart_id", "product_id" }))
+@Table(name = "cart_product", uniqueConstraints = @UniqueConstraint(columnNames = { "cart_id", "product_id" }))
 @Entity
 public class CartProduct {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

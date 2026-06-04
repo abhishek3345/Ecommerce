@@ -9,7 +9,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 
 @Entity
-@Table(name = "USERS")
+@Table(name = "users")
 public class User implements UserDetails {
     private static final long serialVersionUID = 5536306799835655715L;
     @GeneratedValue(strategy = GenerationType.IDENTITY)
